@@ -3,6 +3,46 @@
 The files to modify are under the `src` folder. `src/assets` are JavaScript files written in es6 that get compiled
 through babel into `lib/sitemapper.js`.
 
+### Pre-requisite
+
+Make sure to perform these steps before building: 
+
+Check babel if installed
+```bash
+babel --version
+```
+Install using this command
+```bash
+npm install -g babel-cli
+```
+
+Check if typescript is installed
+```bash
+tsc --version
+```
+Install using this command
+```bash
+npm install -g typescript
+```
+Check if Mocha is installed
+```bash
+mocha --version
+```
+Install using this command:
+```bash
+npm install -g mocha
+```
+
+Install is-url: 
+```bash
+npm install -g is-url
+```
+
+Run this command: 
+```bash
+npm i --save-dev @types/jest
+```
+
 ### Build
 
 To build the `lib` directory with the compiled assets use this command
@@ -11,7 +51,6 @@ npm run build
 ```
 This uses [Babel](http://babeljs.io/) to compile the files. Make sure to run `npm run build` before submitting a pull request.
 
-```bash
 # Run examples/index.js
 npm start
 ```
