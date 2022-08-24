@@ -403,6 +403,7 @@ export default class Sitemapper {
     let err = {};
     let sites = [];
     try {
+      //TODO: handle invalid xml in recursive crawl() to just continue if invalid xml was encountered
       const response = await this.fetch(url);
       sites = response.sites;
     } catch (error) {
